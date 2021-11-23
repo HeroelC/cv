@@ -1,0 +1,23 @@
+[
+    {
+        "img": "resources/logos/logo-acid.png",
+        "position": "Frontend Developer",
+        "name": "Acid Labs - Jornada Completa",
+        "period": "Septiembre 2021 - Actualidad",
+        "location": "Tandil, Buenos Aires, Argentina"
+    },
+    {
+        "img": "resources/logos/technisys.png",
+        "position": "Frontend Developer",
+        "name": "Technisys - Jornada Completa",
+        "period": "Abril 2021 - Septiembre 2021 / 6 meses",
+        "location": "Tandil, Buenos Aires, Argentina"
+    },
+    {
+        "img": "resources/logos/usina.png",
+        "position": "Frontend Developer",
+        "name": "USINA POPULAR Y MUNICIPAL DE TANDIL - Jornada Completa",
+        "period": "Enero 2020 - Abril 2021 / 1 año y 4 meses",
+        "location": "Tandil, Buenos Aires, Argentina"
+    }
+]

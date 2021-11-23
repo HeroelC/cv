@@ -1,0 +1,15 @@
+.card-technology{
+    height: 330px;
+}
+
+.card-technology-header{
+    height: 40%;
+    border-radius: 10px 10px 0 0;
+    color: var(--secondaryColorLetter);
+    background-color: var(--tercearyColorPage);
+}
+
+.card-technology-body{
+    height: 60%;
+    background-color: var(--tercearyColorPage);
+}

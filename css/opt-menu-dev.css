@@ -1,0 +1,21 @@
+.option-menu-dev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    cursor: pointer;
+}
+
+.option-menu-dev.selected{
+    background-color: var(--tercearyColorPage);
+    color: var(--secondaryColorLetter);
+    font-weight: bold;
+}
+
+.opt-menu-left{
+    border-top-left-radius: 16px;
+}
+
+.opt-menu-right{
+    border-top-right-radius: 16px;
+}

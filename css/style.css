@@ -1,0 +1,138 @@
+:root{
+    /* Color page */
+    --primaryColorPage: rgb(31,32,32);
+    --secondaryColorPage: rgb(255, 255, 255);
+    --tercearyColorPage: rgb(245,221,197);
+    /* Color letter page */
+    --primaryColorLetter: rgb(245,221,197);
+    --secondaryColorLetter: rgb(31,32,32);
+}
+
+body{
+    background-color: var(--primaryColorPage);
+    font-family: Inter, sans-serif, "Titillium Web";
+    color: var(--primaryColorLetter);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h1#name{
+    letter-spacing: -.05em;
+    font-weight: 700;
+}
+
+button:focus {
+    outline: none;
+}
+
+.min-height-home{
+    min-height: 430px;
+}
+
+.position-absolute{
+    position: absolute !important;
+}
+
+#navbarSupportedContent{
+    background-color: rgba(77, 77, 77, 0.5) !important;
+    border-radius: 0 10px 10px 0;              
+}
+
+.navbar-expand-lg{
+    position: absolute;
+}
+
+.nav-padding{
+    padding-left: 50px !important;
+}
+
+.margin-top-0{
+    margin-top: 0;
+}
+
+.margin-bottom-10px{
+    margin-bottom: 10px;
+}
+
+.center-middle{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil{
+    border-radius: 50%;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.separator{
+    background-color: var(--primaryColorLetter);
+    width: 90%;
+    height: 2px;
+    border-radius: 40px;
+    box-shadow:
+    0 0 2px 4px rgb(255, 255, 255, 0.1)
+}
+
+.m-16{
+    margin: 16px 0;
+}
+
+.terceary-color-page{
+    background: var(--tercearyColorPage);
+}
+
+.secondary-color-letter{
+    color: var(--secondaryColorLetter);
+}
+
+@media screen and (min-width: 481px){
+
+}
+
+@media screen and (min-width: 769px){
+
+    .nav-padding{
+        padding-left: 0 !important;
+    }
+
+    #navbarSupportedContent{
+        background-color: transparent !important;
+        border-radius: 0;                   
+    }
+
+    .separator{
+        width: 100%;
+    }
+
+    .navbar-expand-lg{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1025px){
+
+}
+
+@media screen and (max-width: 1201px){
+
+}
+
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
