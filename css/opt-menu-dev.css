@@ -12,6 +12,13 @@
     font-weight: bold;
 }
 
+.option-menu-dev:hover{
+    background-color: var(--tercearyColorPage);
+    border: 1px solid var(--primaryColorLetter);
+    color: var(--secondaryColorLetter);
+    font-weight: bold;
+}
+
 .opt-menu-left{
     border-top-left-radius: 16px;
 }

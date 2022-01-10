@@ -35,9 +35,16 @@ async function optionMenuDev() {
 
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
-
                         break;
                     case 'Formación Universitaria':
+                        request = await fetch('./content/college.html').then(response => {
+                            return response.text().then(resp => {
+                                return resp;
+                            })
+                        })
+
+                        information = document.getElementById('information-menu-dev');
+                        information.innerHTML = request;
                         break;
                 }
                 e.target.classList.add('selected');

@@ -1,11 +1,18 @@
 :root{
-    /* Color page */
+/*      Color page 
     --primaryColorPage: rgb(31,32,32);
     --secondaryColorPage: rgb(255, 255, 255);
     --tercearyColorPage: rgb(233 222 210);
-    /* Color letter page */
+    Color letter page
     --primaryColorLetter: rgb(233 222 210);
     --secondaryColorLetter: rgb(31,32,32);
+ */
+
+    --primaryColorPage: #212529;
+    --secondaryColorPage: rgb(255, 255, 255);
+    --tercearyColorPage: rgb(0 0 0 / 90%);
+    --primaryColorLetter: #ffc107;
+    --secondaryColorLetter: #ffc107;
 }
 
 body{
@@ -82,8 +89,8 @@ button:focus {
     width: 90%;
     height: 2px;
     border-radius: 40px;
-    box-shadow:
-    0 0 2px 4px rgb(255, 255, 255, 0.1)
+/*     box-shadow:
+    0 0 2px 4px rgb(255, 255, 255, 0.1) */
 }
 
 .m-16{
@@ -92,6 +99,10 @@ button:focus {
 
 .terceary-color-page{
     background: var(--tercearyColorPage);
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 .secondary-color-letter{
