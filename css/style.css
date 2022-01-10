@@ -2,9 +2,9 @@
     /* Color page */
     --primaryColorPage: rgb(31,32,32);
     --secondaryColorPage: rgb(255, 255, 255);
-    --tercearyColorPage: rgb(245,221,197);
+    --tercearyColorPage: rgb(233 222 210);
     /* Color letter page */
-    --primaryColorLetter: rgb(245,221,197);
+    --primaryColorLetter: rgb(233 222 210);
     --secondaryColorLetter: rgb(31,32,32);
 }
 

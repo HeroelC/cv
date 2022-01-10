@@ -2,30 +2,40 @@ const NAME = "HEROEL JESUS CARPINETTI";
 const TITLE = "Frontend Developer";
 
 document.addEventListener("DOMContentLoaded", () => {
-
     animationLetterName();
     optionMenuDev();
+    initialInfo();
 })
 
-
-async function optionMenuDev(){
+async function optionMenuDev() {
     let optionMenuDev = document.getElementsByClassName('option-menu-dev');
-    for(let i = 0; i < optionMenuDev.length; i++){
-        optionMenuDev[i].addEventListener('click', async(e) => {
+    for (let i = 0; i < optionMenuDev.length; i++) {
+        optionMenuDev[i].addEventListener('click', async (e) => {
 
-            if(!e.target.classList.contains('selected')){
+            if (!e.target.classList.contains('selected')) {
                 removeClassSelectedMenuDev();
-                switch(e.target.id){
+                let request;
+                let information;
+                switch (e.target.id) {
                     case 'Experiencia Developer':
-                        let request = await fetch('./data/company.json').then(response => {
-                            return response.json().then(resp => {
+                        request = await fetch('./content/company.html').then(response => {
+                            return response.text().then(resp => {
+                                return resp;
+                            })
+                        })
+                        information = document.getElementById('information-menu-dev');
+                        information.innerHTML = request;
+                        break;
+                    case 'Experiencia Profesor':
+                        request = await fetch('./content/professor.html').then(response => {
+                            return response.text().then(resp => {
                                 return resp;
                             })
                         })
 
-                        console.log("data: ", request);
-                        break;
-                    case 'Experiencia Profesor': 
+                        information = document.getElementById('information-menu-dev');
+                        information.innerHTML = request;
+
                         break;
                     case 'Formación Universitaria':
                         break;
@@ -36,14 +46,14 @@ async function optionMenuDev(){
     }
 }
 
-function animationLetterName(){
+function animationLetterName() {
     let contador = 0;
     let name = document.getElementById("name");
     let animationName = setInterval(() => {
         name.innerHTML = name.innerHTML.replace("|", "");
         name.innerHTML += NAME.charAt(contador) + "|";
         contador++;
-        if(contador == NAME.length){
+        if (contador == NAME.length) {
             name.innerHTML = name.innerHTML.replace("|", "");
             clearInterval(animationName);
             animationLetterTitle();
@@ -51,24 +61,33 @@ function animationLetterName(){
     }, 250);
 }
 
-function animationLetterTitle(){
+function animationLetterTitle() {
     let contador = 0;
     let title = document.getElementById("title");
     let animationTitle = setInterval(() => {
         title.innerHTML = title.innerHTML.replace("|", "");
         title.innerHTML += TITLE.charAt(contador) + "|";
         contador++;
-        if(contador == TITLE.length){
+        if (contador == TITLE.length) {
             title.innerHTML = title.innerHTML.replace("|", "");
             clearInterval(animationTitle);
         }
     }, 250);
 }
 
-function removeClassSelectedMenuDev(){
+function removeClassSelectedMenuDev() {
     let optionMenuDev = document.getElementsByClassName('option-menu-dev');
 
-    for(let i = 0; i < optionMenuDev.length; i++)
+    for (let i = 0; i < optionMenuDev.length; i++)
         optionMenuDev[i].classList.remove('selected');
 }
 
+async function initialInfo(){
+    let request = await fetch('./content/company.html').then(response => {
+        return response.text().then(resp => {
+            return resp;
+        })
+    })
+    information = document.getElementById('information-menu-dev');
+    information.innerHTML = request;
+}

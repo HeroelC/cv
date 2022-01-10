@@ -19,3 +19,9 @@
 .opt-menu-right{
     border-top-right-radius: 16px;
 }
+
+.center-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
