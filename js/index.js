@@ -5,6 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
     animationLetterName();
     optionMenuDev();
     initialInfo();
+    
+    let navLink = document.getElementsByClassName('nav-link');
+    for(let i = 0; i < navLink.length; i++){
+        navLink[i].addEventListener('click', (e)=>{
+            document.getElementById(`scroll-${e.target.id}`).scrollIntoView({
+                block: "center",
+                behavior: "smooth"
+            });
+        })
+    }
 })
 
 async function optionMenuDev() {
@@ -32,7 +42,6 @@ async function optionMenuDev() {
                                 return resp;
                             })
                         })
-
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
                         break;
@@ -42,7 +51,6 @@ async function optionMenuDev() {
                                 return resp;
                             })
                         })
-
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
                         break;

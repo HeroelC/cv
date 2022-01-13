@@ -35,17 +35,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="nav-mobile" class="navbar-nav ml-auto">
                         <li class="nav-item nav-padding">
-                            <a class="nav-link" value="contacto">
-                                INICIO</a>
+                            <a class="nav-link" id="inicio">INICIO</a>
                         </li>
                         <li class="nav-item nav-padding">
-                            <a class="nav-link" value="funcionamiento">EXPERIENCIA</a>
+                            <a class="nav-link" id="sobreMi">SOBRE MI</a>
                         </li>
                         <li class="nav-item nav-padding">
-                            <a class="nav-link" value="servicios">PROYECTO</a>
+                            <a class="nav-link" id="experiencia">EXPERIENCIA</a>
                         </li>
                         <li class="nav-item nav-padding">
-                            <a class="nav-link" value="footer">CONTACTO</a>
+                            <a class="nav-link" id="conocimiento">CONOCIMIENTOS</a>
+                        </li>
+                        <li class="nav-item nav-padding">
+                            <a class="nav-link" id="contacto">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +56,7 @@
     </div>
 
 
-    <div class="center-middle">
+    <div class="center-middle" id="scroll-inicio">
         <main class="min-height-home">
             <hr class="separator">
             <div>
@@ -71,14 +73,19 @@
 
     </div>
 
-    <div class="container">
-        <div class="m-1 p-3 terceary-color-page secondary-color-letter">
+    <div class="container" id="scroll-sobreMi">
+        <div class="m-1 p-3 terceary-color-page secondary-color-letter border-radius">
 
             <h2 class="pb-2">Sobre mi</h2>
             <div>
                 <div class="col-12 text-justify">
-                    <p> Mi nombre es Heroel, estudié la Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad Nacional del Centro de la Provincia de Buenos Aires. Actualmente me desempeño como Frontend Developer con el framework Angular para Acid Labs.</p>
-                    <p>Dicte clases de manera online en la Universidad Católica de Cuyo (UCCuyo) la cual se enfoca en enseñar a los alumnos las bases de Javascript y Angular. </p>
+                    <p> Mi nombre es Heroel, estudié la Tecnicatura Universitaria en Desarrollo de Aplicaciones
+                        Informáticas (TUDAI) en la Universidad Nacional del Centro de la Provincia de Buenos Aires.
+                    </p>
+                    <p>Dicte clases durante 4 meses de manera online en la Universidad Católica de Cuyo (UCCuyo) la cual
+                        se enfoca en enseñar a los alumnos las bases de Javascript y Angular. </p>
+                    <p>Actualmente me desempeño como Frontend Developer utilizando Ionic junto con el framework Angular
+                        para Acid Labs.</p>
                 </div>
             </div>
         </div>
@@ -86,7 +93,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" id="scroll-experiencia">
         <div class="row text-center m-1">
             <div class="col-4 option-menu-dev opt-menu-left selected"
                 style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
@@ -112,141 +119,109 @@
     </div>
 
     <div class="container">
-        <h2>Conocimientos</h2>
-        <hr class="separator">
-        <div class="container text-center my-3">
-
-            <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                    <div class="carousel-inner w-100" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">
-                                            Angular</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">
-                                            JavaScript</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoCSS.png" alt="Logo de CSS3">
-                                            CSS</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoHTML5.png" alt="Logo de HTML5">
-                                            HTML</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoGitHub.png" alt="Logo de Git">
-                                            Git</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoPHP.png" alt="Logo de lenguaje PHP">
-                                            PHP</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card-technology">
-                                    <div class="card-technology-header">
-                                        <i><img src="resources/logos/logoJava.png" alt="Logo lenguaje Java">
-                                            Java</i>
-                                    </div>
-                                    <hr style="margin: 0; background-color: white;">
-                                    <div class="card-technology-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
-                            aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
-                            aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+        <div class="m-1 p-3 terceary-color-page secondary-color-letter border-radius">
+            <h2 class="pb-2">Conocimientos</h2>
+            <hr class="separator" id="scroll-conocimiento">
+            <div class="col-12">
+                <h3 class="mb-4">USINA POPULAR Y MUNICIPAL DE TANDIL SEM.</h3>
+                <div class="pl-3">
+                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
+                    <p><strong>Cargo:</strong> Frontend Developer</p>
+                    <p><strong>Período: </strong>enero de 2020 - abril de 2021 (1 año 4 meses)</p>
+                    <p>
+                        <strong>Tecnologias: </strong>
+                        <i><img width="48px" src="resources/logos/logoPHP.png" alt="Logo de lenguaje PHP">PHP</i>
+                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
+                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
+                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
+                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
+                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
+                    </p>
                 </div>
+
+                <ul>
+                    <li>Cree aplicaciones tanto móviles como web en el framework Ionic en conjunto con Angular</li>
+                    <li>Uso de Git para el control de versiones</li>
+                    <li>Hice uso de Postman, para probar los servicios tanto desde el frontend como del backend</li>
+                    <li>Utilice lenguajes como css (bootstrap, ssas) , html y javascript (tanto con Angular como
+                        vanilla)</li>
+                    <li>Dentro de Ionic también utilizo si se requiere bases de datos (SQLite) u otro metodo de
+                        almacenamiento de datos como puede ser LocalStorage</li>
+                    <li>Tengo conocimientos del lenguaje PHP, ya que realice algunos servicios REST en el mismo</li>
+                </ul>
+
+                <hr class="separator">
+
+                <h3 class="mb-4">Technisys S.A</h3>
+
+                <div class="pl-3">
+                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
+                    <p><strong>Cargo:</strong> Frontend Developer</p>
+                    <p><strong>Período:</strong> abril de 2021 - septiembre de 2021 (6 meses)</p>
+                    <p>
+                        <strong>Tecnologias: </strong>
+                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
+                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
+                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
+                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
+                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
+                    </p>
+                </div>
+
+                <ul>
+                    <li>Realice tareas de programación frontend en el framework Ionic junto con Angular para un importante Banco
+                        de Argentina</li>
+                    <li>Uso de Git para el control de versiones en conjunto con bitbucket</li>
+                    <li>Trato directo con el cliente para resolver bug y/o obtener los requerimientos de las funcionalidades a
+                        desarrollar</li>
+                </ul>
+
+                <hr class="separator">
+
+                <h3 class="mb-4">Acid Labs</h3>
+
+                <div class="pl-3">
+                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
+                    <p><strong>Cargo:</strong> Frontend Developer</p>
+                    <p><strong>Período:</strong> septiembre de 2021 - Actualidad</p>
+                    <p>
+                        <strong>Tecnologias: </strong>
+                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
+                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
+                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
+                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
+                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
+                    </p>
+                </div>
+
+                <ul>
+                    <li>Realice tareas de programación frontend en el framework Ionic junto con Angular para un importante
+                         fintech de Chile</li>
+                    <li>Realice tareas de programación frontend en el framework Angular para un importante
+                        aerolinea</li>
+                    <li>Uso de Git para el control de versiones en conjunto con bitbucket</li>
+                    <li>Test Unitarios basicos con Karma y Jasmine</li>
+                </ul>
+
             </div>
         </div>
 
         <hr class="separator">
     </div>
 
-    <div class="container">
-        <h2>Proyectos</h2>
-        <hr class="separator">
-        <hr class="separator">
-    </div>
-
-    <footer class="container">
-        <div class="m-1 p-3 terceary-color-page secondary-color-letter">
+    <footer class="container" id="scroll-contacto">
+        <div class="m-1 p-3 terceary-color-page secondary-color-letter border-radius">
             <h2 class="pb-2">Contacto</h2>
             <div class="col-12">
-                <p>heroeljcarpinetti@gmail.com</p>
+                <p><img class="mr-2" width="32px" src="resources/logos/icono-mail-desktop.png" alt="Logo de Email">heroeljcarpinetti@gmail.com</p>
             </div>
 
             <div class="col-12 text-center">
                 <i>
-                    <a href="http://github.com/heroelc" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/logos/logoGitHub.png" alt="Logo de Git" width="96px">
+                    <a href="https://www.linkedin.com/in/heroelc/" target="_blank" rel="noopener noreferrer">
+                        <img src="resources/logos/logoLinkedin.png" alt="Logo de Linkedin" width="75px">
                     </a>
                 </i>
-                
-                <i>
-                    <a href="http://github.com/heroelc" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/logos/logoGitHub.png" alt="Logo de Git" width="96px">
-                    </a>
-                </i>
-
                 <i>
                     <a href="http://github.com/heroelc" target="_blank" rel="noopener noreferrer">
                         <img src="resources/logos/logoGitHub.png" alt="Logo de Git" width="96px">

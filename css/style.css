@@ -105,6 +105,10 @@ button:focus {
     text-align: justify;
 }
 
+.border-radius{
+    border-radius: 8px;
+}
+
 .secondary-color-letter{
     color: var(--secondaryColorLetter);
 }
