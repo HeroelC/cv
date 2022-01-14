@@ -63,6 +63,7 @@ button:focus {
 
 .select-item-nav{
     border-bottom: 2px solid #ffc107;
+    font-weight: bold;
 }
 
 .margin-top-0{
