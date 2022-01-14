@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let navLink = document.getElementsByClassName('nav-link');
     for(let i = 0; i < navLink.length; i++){
         navLink[i].addEventListener('click', (e)=>{
+            removeAllSelectItemNav(navLink);
+            e.target.classList.add('select-item-nav');
             document.getElementById(`scroll-${e.target.id}`).scrollIntoView({
                 block: "center",
                 behavior: "smooth"
@@ -58,6 +60,12 @@ async function optionMenuDev() {
                 e.target.classList.add('selected');
             }
         })
+    }
+}
+
+function removeAllSelectItemNav(navLink){
+    for(let i = 0; i <  navLink.length; i++){
+        navLink[i].classList.remove('select-item-nav');
     }
 }
 
