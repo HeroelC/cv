@@ -11,12 +11,12 @@
     --primaryColorPage: #212529;
     --secondaryColorPage: rgb(255, 255, 255);
     --tercearyColorPage: rgb(0 0 0 / 90%);
-    --primaryColorLetter: #ffc107;
-    --secondaryColorLetter: #ffc107;
+    --primaryColorLetter: #ffffff;
+    --secondaryColorLetter: #ffffff;
 }
 
 body{
-    background-color: var(--primaryColorPage);
+    background-color: #1b7fd1;
     font-family: Inter, sans-serif, "Titillium Web";
     color: var(--primaryColorLetter);
     -webkit-font-smoothing: antialiased;
@@ -28,7 +28,7 @@ h1{
 
 h2{
     font-size: 32px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 h1#name{
@@ -62,7 +62,7 @@ button:focus {
 }
 
 .select-item-nav{
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #ffffff;
     font-weight: bold;
 }
 
@@ -79,6 +79,9 @@ button:focus {
     display:flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../resources/img/bg-header.svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-perfil{
@@ -104,7 +107,9 @@ button:focus {
 }
 
 .terceary-color-page{
-    background: var(--tercearyColorPage);
+    background-image: url(../resources/img/bg-header.svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-justify{

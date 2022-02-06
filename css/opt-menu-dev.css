@@ -7,16 +7,23 @@
 }
 
 .option-menu-dev.selected{
-    background-color: var(--tercearyColorPage);
+    background-color: transparent;
     color: var(--secondaryColorLetter);
     font-weight: bold;
+    border: 1px solid white;
+    background-image: url(../resources/img/bg-header.svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .option-menu-dev:hover{
-    background-color: var(--tercearyColorPage);
-    border: 1px solid var(--primaryColorLetter);
+    background-color: transparent;
     color: var(--secondaryColorLetter);
     font-weight: bold;
+    border: 1px solid white;
+    background-image: url(../resources/img/bg-header.svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .opt-menu-left{
