@@ -11,9 +11,7 @@
     color: var(--secondaryColorLetter);
     font-weight: 500;
     border: 1px solid white;
-    background-image: url(../resources/img/bg-header.svg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(26 13 51) 35%, rgb(43 9 101) 100%);
     border-bottom: 1px solid #ffffff29;
 }
 

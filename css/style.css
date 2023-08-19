@@ -16,8 +16,8 @@
 }
 
 body{
-    background-color: #1b7fd1;
-    font-family: Inter, sans-serif, "Titillium Web";
+    background: rebeccapurple;
+    font-family: -apple-system, Inter, sans-serif, "Titillium Web";
     color: var(--primaryColorLetter);
     -webkit-font-smoothing: antialiased;
 }
@@ -82,9 +82,7 @@ button:focus {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../resources/img/bg-header.svg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(26 13 51) 35%, rgb(43 9 101) 100%);
 }
 
 .img-perfil{
@@ -114,9 +112,7 @@ button:focus {
 }
 
 .terceary-color-page{
-    background-image: url(../resources/img/bg-header.svg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(26 13 51) 35%, rgb(43 9 101) 100%);
 }
 
 .text-justify{
