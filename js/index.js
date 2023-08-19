@@ -31,12 +31,17 @@ async function optionMenuDev() {
                 switch (e.target.id) {
                     case 'Experiencia Developer':
                         request = await fetch('./content/company.html').then(response => {
-                            return response.text().then(resp => {
+                            return response.text().then(resp => {      
                                 return resp;
                             })
                         })
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
+
+                        const fecha1 = new Date('2022-04-01');
+                        const fecha2 = new Date(); // Fecha de hoy
+                        
+                        calculateDateDifference(fecha1, fecha2);
                         break;
                     case 'Experiencia Profesor':
                         request = await fetch('./content/professor.html').then(response => {
@@ -113,4 +118,21 @@ async function initialInfo(){
     })
     information = document.getElementById('information-menu-dev');
     information.innerHTML = request;
+    
+    const fecha1 = new Date('2022-04-01');
+    const fecha2 = new Date(); // Fecha de hoy
+    
+    calculateDateDifference(fecha1, fecha2);
 }
+
+function calculateDateDifference(date1, date2) {
+    const yearDiff = date2.getFullYear() - date1.getFullYear();
+    const monthDiff = date2.getMonth() - date1.getMonth();
+    
+    if (monthDiff < 0) {
+      yearDiff--;
+      monthDiff += 12;
+    }
+    
+    document.querySelectorAll(".current-time").forEach( item => item.innerHTML = `${yearDiff} año y ${monthDiff} meses`);
+  }

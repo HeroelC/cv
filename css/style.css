@@ -55,6 +55,8 @@ button:focus {
 
 .navbar-expand-lg{
     position: absolute;
+    box-shadow: 1px 11px 5px -8px rgb(0 0 0 / 23%);
+    user-select: none;
 }
 
 .nav-padding{
@@ -62,8 +64,9 @@ button:focus {
 }
 
 .select-item-nav{
-    border-bottom: 2px solid #ffffff;
-    font-weight: bold;
+    border-bottom: 2px solid #b3d7ff;
+    font-weight: 500;  
+    color: #b3d7ff;
 }
 
 .margin-top-0{
@@ -91,6 +94,10 @@ button:focus {
 .nav-link {
     padding-bottom: 4px;
     cursor: pointer;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .separator{
