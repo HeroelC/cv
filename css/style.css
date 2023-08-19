@@ -23,12 +23,14 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 h2{
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 500;
+    color: lightgoldenrodyellow;
 }
 
 h1#name{
@@ -64,7 +66,7 @@ button:focus {
 }
 
 .select-item-nav{
-    border-bottom: 2px solid #b3d7ff;
+    border-bottom: 2px solid white;
     font-weight: 500;  
     color: #b3d7ff;
 }
@@ -209,6 +211,27 @@ button:focus {
     }
   }
 
+  .links-contacts{
+    filter: invert(1);
+  }
+
+  .links-contacts:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    filter: drop-shadow(1px 1px 6px white);
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  .links-contacts-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops

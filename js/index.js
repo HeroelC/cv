@@ -2,7 +2,7 @@ const NAME = "HEROEL JESUS CARPINETTI";
 const TITLE = "Frontend Developer";
 
 document.addEventListener("DOMContentLoaded", () => {
-    animationLetterName();
+    //animationLetterName();
     optionMenuDev();
     initialInfo();
     
