@@ -21,6 +21,10 @@
     border: 1px solid white;
 }
 
+#information-menu-dev{
+    min-height: 690px !important;
+}
+
 .opt-menu-left{
     border-top-left-radius: 16px;
 }

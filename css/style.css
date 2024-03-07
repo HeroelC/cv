@@ -129,6 +129,12 @@ button:focus {
     display: none;
 }
 
+#scroll-sobreMi{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (min-width: 481px){
     h1{
         font-size: 28px;
