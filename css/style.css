@@ -16,23 +16,26 @@
 }
 
 body{
-    background: rebeccapurple;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(26 13 51) 35%, rgb(43 9 101) 100%);
     font-family: -apple-system, Inter, sans-serif, "Titillium Web";
     color: var(--primaryColorLetter);
     -webkit-font-smoothing: antialiased;
 }
 
 h1{
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     color: lightgoldenrodyellow;
 }
 
+.m-b-16{
+    margin-bottom: 16px;
+}
 h1#name{
     letter-spacing: -.05em;
     font-weight: 700;
@@ -65,11 +68,7 @@ button:focus {
     padding-left: 50px !important;
 }
 
-.select-item-nav{
-    border-bottom: 2px solid white;
-    font-weight: 500;  
-    color: #b3d7ff;
-}
+
 
 .margin-top-0{
     margin-top: 0;
@@ -102,11 +101,8 @@ button:focus {
 
 .separator{
     background-color: var(--primaryColorLetter);
-    width: 90%;
     height: 2px;
     border-radius: 40px;
-/*     box-shadow:
-    0 0 2px 4px rgb(255, 255, 255, 0.1) */
 }
 
 .m-16{
@@ -129,8 +125,26 @@ button:focus {
     color: var(--secondaryColorLetter);
 }
 
-@media screen and (min-width: 481px){
+.desktop{
+    display: none;
+}
 
+@media screen and (min-width: 481px){
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    .separator{
+        width: 90%;
+    }
+
+    .desktop{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 769px){
@@ -231,6 +245,37 @@ button:focus {
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+
+  .tecnology-icons{
+    padding: 8px 10px;
+    border-radius: 21px;
+    font-size: 11px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .m-r-8{
+    margin-right: 8px;
+  }
+
+  .f-invert{
+    filter: invert(1);
+  }
+
+  .select-item-nav{
+    border-bottom: 2px solid white;
+    font-weight: 500;  
+    color: #b3d7ff;
+}
+
+  @keyframes borderAnimation {
+    from {
+      width: 0;
+    }
+    to {
+        width: 80%;
+    }
   }
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets

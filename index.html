@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:title" content="Website de Heroel Carpinetti" />
+    <meta
+      property="og:description"
+      content="Mi nombre es Heroel, estudié la Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad Nacional del Centro de la Provincia de Buenos Aires.
+    En 2021 dicte clases durante 4 meses de manera online en la Universidad Católica de Cuyo (UCCuyo) la cual se enfoca en enseñar a los alumnos las bases de Javascript y Angular. Actualmente me desempeño como Frontend Developer Angular para XCALE Consulting."
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://i.gyazo.com/c473ec54df6ffe734682c3c1f373d07f.jpg" />
+    <meta
+      property="og:image"
+      content="https://i.gyazo.com/c473ec54df6ffe734682c3c1f373d07f.jpg"
+    />
 
     <title>Carpinetti, Heroel</title>
     <link rel="icon" type="image/png" href="resources/icons/favicon.png" />
     <script src="js/index.js"></script>
 
-    <link rel="stylesheet"
-        data-href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        data-optimized-fonts="true">
+    <link
+      rel="stylesheet"
+      data-href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-optimized-fonts="true"
+    />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carrousel.css">
-    <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/opt-menu-dev.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carrousel.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/opt-menu-dev.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+  </head>
 
-<body>
+  <body>
     <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg" style="width: 100%; background: rebeccapurple;">
-            <div class="container">
-                <button class="navbar-toggler" style="padding-left: 0;" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img src="resources/icons/menu.png" width="30px" height="30px">
-                </button>
+      <nav
+        class="navbar navbar-expand-lg"
+        style="
+          width: 100%;
+          background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%,rgb(26 13 51) 35%,rgb(43 9 101) 100%);"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            style="padding-left: 0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="resources/icons/menu.png" width="30px" height="30px" />
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul id="nav-mobile" class="navbar-nav ml-auto">
-                        <li class="nav-item nav-padding">
-                            <a class="nav-link" id="inicio">INICIO</a>
-                        </li>
-                        <li class="nav-item nav-padding">
-                            <a class="nav-link" id="sobreMi">SOBRE MI</a>
-                        </li>
-                        <li class="nav-item nav-padding">
-                            <a class="nav-link" id="experiencia">EXPERIENCIA</a>
-                        </li>
-                        <li class="nav-item nav-padding">
-                            <a class="nav-link" id="conocimiento">CONOCIMIENTOS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="nav-mobile" class="navbar-nav ml-auto">
+              <li class="nav-item nav-padding">
+                <a class="nav-link" id="inicio">INICIO</a>
+              </li>
+              <li class="nav-item nav-padding">
+                <a class="nav-link" id="sobreMi">SOBRE MI</a>
+              </li>
+              <li class="nav-item nav-padding">
+                <a class="nav-link" id="experiencia">EXPERIENCIA</a>
+              </li>
+              <li class="nav-item nav-padding">
+                <a class="nav-link" id="conocimiento">CONOCIMIENTOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
-
     <div class="center-middle mb-5" id="scroll-inicio">
-        <main class="min-height-home">
-            <hr class="separator">
-            <div>
-                <p class="text-center">
-                    <img class="img-perfil" src="resources/img/pp.jpg" alt="Imagen de perfil" width="300px">
-                </p>
-            </div>
-            <h1 class="margin-bottom-10px margin-top-0 text-center">HEROEL JESUS CARPINETTI</h1>
-            <h2 class="margin-top-0 text-center">Frontend Developer</h2>
-            <footer class="links-contacts-center">
-                <a href="mailto:heroeljcarpinetti@gmail.com">
-                    <img src="resources/svg/mail-svg.svg" alt="Logo email" width="42px" class="links-contacts">
-                </a>
-                <a href="https://www.linkedin.com/in/heroelc/" target="_blank" rel="noopener noreferrer">
-                    <img src="resources/svg/linkedin-svg.svg" width="38px" alt="Logo linkedin" class="links-contacts">
-                </a>    
-                <a href="http://github.com/heroelc" target="_blank"  rel="noopener noreferrer">
-                    <img src="resources/svg/github-svg.svg" alt="Logo github" class="links-contacts" width="31px">
-                </a>
-                
-            </footer>
-            <hr class="separator">
-        </main>
+      <main class="min-height-home">
+        <hr class="separator" />
+        <div>
+          <p class="text-center">
+            <img
+              class="img-perfil"
+              src="resources/img/pp.jpg"
+              alt="Imagen de perfil"
+              width="300px"
+            />
+          </p>
+        </div>
+        <h1 class="margin-0 margin-top-0">
+          HEROEL JESUS CARPINETTI
+        </h1>
+        <h2 class="margin-top-0 text-center m-b-16">FRONTEND DEVELOPER</h2>
+        <footer class="links-contacts-center">
+          <button style="--clr: #8a2be2" id="linkedin">
+            <span> Linkedin </span>
+            <i></i>
+          </button>
 
-<!--         <div class="waves">
+          <button style="--clr: #8a2be2" id="github">
+            <span> Github </span>
+            <i></i>
+          </button>
+        </footer>
+        <hr class="separator" />
+      </main>
+
+      <!--         <div class="waves">
             <div class="wave circulo a"></div>
             <div class="wave circulo b"></div>
             <div class="wave circulo c"></div>
@@ -91,150 +122,338 @@
     </div>
 
     <div class="container" id="scroll-sobreMi">
-        <div class="m-1 p-3 terceary-color-page secondary-color-letter border-radius">
-
-            <h2 class="pb-2">Sobre mi</h2>
-            <div>
-                <div class="col-12">
-                    <p> Mi nombre es Heroel, estudié la Tecnicatura Universitaria en Desarrollo de Aplicaciones
-                        Informáticas (TUDAI) en la Universidad Nacional del Centro de la Provincia de Buenos Aires.
-                    </p>
-                    <p>En 2021 dicte clases durante 4 meses de manera online en la Universidad Católica de Cuyo (UCCuyo) la cual
-                        se enfoca en enseñar a los alumnos las bases de Javascript y Angular. </p>
-                    <p>Actualmente me desempeño como Frontend Developer Angular
-                        para XCALE Consulting.</p>
-                </div>
-            </div>
+      <div
+        class="m-1 p-3 terceary-color-page secondary-color-letter border-radius"
+      >
+        <h2 class="pb-2">Sobre mi</h2>
+        <div>
+          <div class="col-12">
+            <p>
+              Mi nombre es Heroel, estudié la Tecnicatura Universitaria en
+              Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad
+              Nacional del Centro de la Provincia de Buenos Aires.
+            </p>
+            <p>
+              En 2021 dicte clases durante 4 meses de manera online en la
+              Universidad Católica de Cuyo (UCCuyo) la cual se enfoca en enseñar
+              a los alumnos las bases de Javascript y Angular.
+            </p>
+            <p>
+              Actualmente me desempeño como Frontend Developer Angular para
+              XCALE Consulting.
+            </p>
+          </div>
         </div>
-        <hr class="separator">
+      </div>
+      <hr class="separator" />
     </div>
 
-
     <div class="container" id="scroll-experiencia">
-        <div class="row text-center ml-1 mr-1">
-            <div class="col-4 option-menu-dev opt-menu-left selected"
-                style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
-                unselectable="on" onselectstart="return false;" onmousedown="return false;" id="Experiencia Developer">
-                Experiencia Developer
-            </div>
-            <div class="col-4 option-menu-dev"
-                style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
-                unselectable="on" onselectstart="return false;" onmousedown="return false;" id="Experiencia Profesor">
-                Experiencia Profesor
-            </div>
-            <div class="col-4 option-menu-dev opt-menu-right"
-                style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
-                unselectable="on" onselectstart="return false;" onmousedown="return false;"
-                id="Formación Universitaria">
-                Formación Universitaria
-            </div>
+      <div class="row text-center ml-1 mr-1">
+        <div
+          class="col-4 option-menu-dev opt-menu-left selected"
+          style="
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -o-user-select: none;
+          "
+          unselectable="on"
+          onselectstart="return false;"
+          onmousedown="return false;"
+          id="Experiencia Developer"
+        >
+          <img
+            src="resources/svg/secret-agent.svg"
+            width="24px"
+            class="m-r-8 f-invert desktop"
+          />
+          Experiencia Developer
         </div>
-        <div id="information-menu-dev">
-
+        <div
+          class="col-4 option-menu-dev"
+          style="
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -o-user-select: none;
+          "
+          unselectable="on"
+          onselectstart="return false;"
+          onmousedown="return false;"
+          id="Experiencia Profesor"
+        >
+          <img
+            src="resources/svg/profesor.svg"
+            width="24px"
+            class="m-r-8 f-invert desktop"
+          />
+          Experiencia Profesor
         </div>
-        <hr class="separator">
+        <div
+          class="col-4 option-menu-dev opt-menu-right"
+          style="
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -o-user-select: none;
+          "
+          unselectable="on"
+          onselectstart="return false;"
+          onmousedown="return false;"
+          id="Formación Universitaria"
+        >
+          <img
+            src="resources/svg/graduate.svg"
+            width="24px"
+            class="m-r-8 f-invert desktop"
+          />
+          Formación Universitaria
+        </div>
+      </div>
+      <div id="information-menu-dev"></div>
+      <hr class="separator" />
     </div>
 
     <div class="container">
-        <div class="m-1 p-3 terceary-color-page secondary-color-letter border-radius" >
-            <h2 class="pb-2">Conocimientos</h2>
-            <div class="col-12">
-                <h3 class="mb-4" id="scroll-conocimiento">USINA POPULAR Y MUNICIPAL DE TANDIL SEM.</h3>
-                <div class="pl-3">
-                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
-                    <p><strong>Cargo:</strong> Frontend Developer</p>
-                    <p><strong>Período: </strong>enero de 2020 - abril de 2021 (1 año 4 meses)</p>
-                    <p>
-                        <strong>Tecnologias: </strong>
-                        <i><img width="48px" src="resources/logos/logoPHP.png" alt="Logo de lenguaje PHP">PHP</i>
-                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
-                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
-                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
-                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
-                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
-                    </p>
-                </div>
+      <div
+        class="m-1 p-3 terceary-color-page secondary-color-letter border-radius"
+      >
+        <h2 class="pb-2">Conocimientos</h2>
+        <div class="col-12">
+          <h3 class="mb-4" id="scroll-conocimiento">
+            USINA POPULAR Y MUNICIPAL DE TANDIL SEM.
+          </h3>
+          <div class="pl-3">
+            <p><strong>Cargo:</strong> Frontend Developer</p>
+            <p><strong>Modalidad:</strong> Tandil, Buenos Aires, Argentina</p>
+            <p>
+              <strong>Período: </strong>enero de 2020 - abril de 2021 (1 año 4
+              meses)
+            </p>
+          </div>
 
-                <ul>
-                    <li>Cree aplicaciones tanto móviles como web en el framework Ionic en conjunto con Angular</li>
-                    <li>Uso de Git para el control de versiones</li>
-                    <li>Hice uso de Postman, para probar los servicios tanto desde el frontend como del backend</li>
-                    <li>Utilice lenguajes como css (bootstrap, ssas) , html y javascript (tanto con Angular como
-                        vanilla)</li>
-                    <li>Dentro de Ionic también utilizo si se requiere bases de datos (SQLite) u otro metodo de
-                        almacenamiento de datos como puede ser LocalStorage</li>
-                    <li>Tengo conocimientos del lenguaje PHP, ya que realice algunos servicios REST en el mismo</li>
-                </ul>
+          <ul>
+            <li>
+              Cree aplicaciones tanto móviles como web en el framework Ionic en
+              conjunto con Angular
+            </li>
+            <li>Uso de Git para el control de versiones</li>
+            <li>
+              Hice uso de Postman, para probar los servicios tanto desde el
+              frontend como del backend
+            </li>
+            <li>
+              Utilice lenguajes como css (bootstrap, ssas) , html y javascript
+              (tanto con Angular como vanilla)
+            </li>
+            <li>
+              Dentro de Ionic también utilizo si se requiere bases de datos
+              (SQLite) u otro metodo de almacenamiento de datos como puede ser
+              LocalStorage
+            </li>
+            <li>
+              Tengo conocimientos del lenguaje PHP, ya que realice algunos
+              servicios REST en el mismo
+            </li>
+          </ul>
 
-                <hr class="separator">
+          <footer>
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoPHP.png"
+                alt="Logo de lenguaje PHP"
+              />PHP</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoGitHub.png"
+                alt="Logo de Git"
+              />Git</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoHTML5.png"
+                alt="Logo de HTML5"
+              />HTML</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoCSS.png"
+                alt="Logo de CSS3"
+              />CSS</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoJs.png"
+                alt="Logo lenguaje JavaScript"
+              />Javascript</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoAngular.png"
+                alt="Logo lenguaje Angular"
+              />Angular</span
+            >
+          </footer>
 
-                <h3 class="mb-4">Technisys S.A</h3>
+          <hr class="separator" />
 
-                <div class="pl-3">
-                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
-                    <p><strong>Cargo:</strong> Frontend Developer</p>
-                    <p><strong>Período:</strong> abril de 2021 - septiembre de 2021 (6 meses)</p>
-                    <p>
-                        <strong>Tecnologias: </strong>
-                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
-                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
-                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
-                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
-                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
-                    </p>
-                </div>
+          <h3 class="mb-4">Technisys S.A</h3>
 
-                <ul>
-                    <li>Realice tareas de programación frontend en el framework Ionic junto con Angular para un importante Banco
-                        de Argentina</li>
-                    <li>Uso de Git para el control de versiones en conjunto con bitbucket</li>
-                    <li>Trato directo con el cliente para resolver bug y/o obtener los requerimientos de las funcionalidades a
-                        desarrollar</li>
-                </ul>
+          <div class="pl-3">
+            <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
+            <p><strong>Cargo:</strong> Frontend Developer</p>
+            <p>
+              <strong>Período:</strong> abril de 2021 - septiembre de 2021 (6
+              meses)
+            </p>
+          </div>
 
-                <hr class="separator">
+          <ul>
+            <li>
+              Realice tareas de programación frontend en el framework Ionic
+              junto con Angular para un importante Banco de Argentina
+            </li>
+            <li>
+              Uso de Git para el control de versiones en conjunto con bitbucket
+            </li>
+            <li>
+              Trato directo con el cliente para resolver bug y/o obtener los
+              requerimientos de las funcionalidades a desarrollar
+            </li>
+          </ul>
 
-                <h3 class="mb-4">Acid Labs</h3>
+          <footer>
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoGitHub.png"
+                alt="Logo de Git"
+              />Git</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoHTML5.png"
+                alt="Logo de HTML5"
+              />HTML</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoCSS.png"
+                alt="Logo de CSS3"
+              />CSS</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoJs.png"
+                alt="Logo lenguaje JavaScript"
+              />JavaScript</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoAngular.png"
+                alt="Logo lenguaje Angular"
+              />Angular</span
+            >
+          </footer>
 
-                <div class="pl-3">
-                    <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
-                    <p><strong>Cargo:</strong> Frontend Developer</p>
-                    <p><strong>Período:</strong> septiembre de 2021 - Actualidad</p>
-                    <p>
-                        <strong>Tecnologias: </strong>
-                        <i><img width="48px" src="resources/logos/logoGitHub.png" alt="Logo de Git">Git</i>
-                        <i><img width="48px" src="resources/logos/logoHTML5.png" alt="Logo de HTML5">HTML</i>
-                        <i><img width="48px" src="resources/logos/logoCSS.png" alt="Logo de CSS3">CSS</i>
-                        <i><img width="48px" src="resources/logos/logoJs.png" alt="Logo lenguaje JavaScript">JavaScript</i>
-                        <i><img width="48px" src="resources/logos/logoAngular.png" alt="Logo lenguaje Angular">Angular</i>
-                    </p>
-                </div>
+          <hr class="separator" />
 
-                <ul>
-                    <li>Realice tareas de programación frontend en el framework Ionic junto con Angular para un importante
-                         fintech de Chile</li>
-                    <li>Realice tareas de programación frontend en el framework Angular para un importante
-                        aerolinea</li>
-                    <li>Uso de Git para el control de versiones en conjunto con bitbucket</li>
-                    <li>Test Unitarios basicos con Karma y Jasmine</li>
-                </ul>
+          <h3 class="mb-4">Acid Labs</h3>
 
-            </div>
+          <div class="pl-3">
+            <p><strong>Cargo:</strong> Frontend Developer</p>
+            <p><strong>Lugar:</strong> Tandil, Buenos Aires, Argentina</p>
+            <p><strong>Período:</strong> septiembre de 2021 - Actualidad</p>
+          </div>
+
+          <ul>
+            <li>
+              Realice tareas de programación frontend en el framework Ionic
+              junto con Angular para un importante fintech de Chile
+            </li>
+            <li>
+              Realice tareas de programación frontend en el framework Angular
+              para un importante aerolinea
+            </li>
+            <li>
+              Uso de Git para el control de versiones en conjunto con bitbucket
+            </li>
+            <li>Test Unitarios basicos con Karma y Jasmine</li>
+          </ul>
+
+          <footer>
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoGitHub.png"
+                alt="Logo de Git"
+              />Git</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoHTML5.png"
+                alt="Logo de HTML5"
+              />HTML</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoCSS.png"
+                alt="Logo de CSS3"
+              />CSS</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoJs.png"
+                alt="Logo lenguaje JavaScript"
+              />JavaScript</span
+            >
+            <span class="tecnology-icons"
+              ><img
+                width="32px"
+                src="resources/logos/logoAngular.png"
+                alt="Logo lenguaje Angular"
+              />Angular</span
+            >
+          </footer>
         </div>
+      </div>
 
-        <hr class="separator">
+      <hr class="separator" />
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/carrousel.js"></script>
-</body>
-
+  </body>
 </html>

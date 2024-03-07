@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //animationLetterName();
     optionMenuDev();
     initialInfo();
-    
+    buttonLinks();
     let navLink = document.getElementsByClassName('nav-link');
     for(let i = 0; i < navLink.length; i++){
         navLink[i].addEventListener('click', (e)=>{
@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 })
+
+function buttonLinks(){
+    let githubPage = document.getElementById('github');
+    let linkedinPage = document.getElementById('linkedin');
+
+    githubPage.addEventListener('click', ()=>{
+        window.open("https://github.com/HeroelC");
+    })
+
+    linkedinPage.addEventListener('click', ()=>{
+        window.open("https://www.linkedin.com/in/heroelc");
+    });
+}
 
 async function optionMenuDev() {
     let optionMenuDev = document.getElementsByClassName('option-menu-dev');
