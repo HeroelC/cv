@@ -3,7 +3,7 @@
     height: 135px;
     border-radius: 50%;
     position: relative;
-    bottom: -130px;
+    top: 16vh;
     left: 20px;
     border: 5px solid var(--background-color);
 }
