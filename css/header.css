@@ -28,6 +28,10 @@
     margin: 0 auto;
 }
 
+.m-b-50{
+    margin-bottom: 50px;
+}
+
 .m-b-70{
     margin-bottom: 70px;
 }
@@ -52,6 +56,14 @@
 
 #toggle-button{
     position: relative;
-    left: 95%;
+    left: 85%;
     bottom: -20px;
+}
+
+@media screen and (min-width: 446px) {
+    #toggle-button{
+        position: relative;
+        left: 90%;
+        bottom: -20px;
+    }
 }
