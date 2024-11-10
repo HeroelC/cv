@@ -98,12 +98,28 @@ p {
   margin-left: 6px;
 }
 
+.m-r-6{
+  margin-right: 6px;
+}
+
 .m-r-10 {
   margin-right: 10px;
 }
 
 .m-t-16{
   margin-top: 16px;
+}
+
+.p-b-50{
+  padding-bottom: 50px;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.p-r-50{
+  padding-right: 50px;
 }
 
 .w-100 {

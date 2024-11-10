@@ -79,6 +79,9 @@ async function initialInfo(){
     const fecha2 = new Date(); // Fecha de hoy
     
     calculateDateDifference(fecha1, fecha2);
+
+    let optionExperience = document.getElementById('Experiencia');
+    optionExperience.classList.add('selected');
 }
 
 function calculateDateDifference(date1, date2) {

@@ -5,6 +5,26 @@
     border: 2px solid var(--background-color);
 }
 
+.card__border{
+    border: 0.5px solid var(--secondary-text-color);
+    border-top: none;
+}
+
+.nav__border{
+    border: 0.5px solid var(--secondary-text-color);
+}
+
+.header__border{
+    border: 0.5px solid var(--secondary-text-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+.view-profile:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px){
     .body-card-experience{
         display: flex;
