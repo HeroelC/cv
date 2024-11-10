@@ -28,7 +28,11 @@ p {
   font-size: 15px;
 }
 
-.svg-style {
+.img-style{
+  filter: hue-rotate(90deg) brightness(0) saturate(1000%) invert(35%);
+}
+
+.svg-style{
   fill: var(--secondary-text-color);
   width: 18px;
   height: 18px;
@@ -120,6 +124,10 @@ p {
 
 .p-r-50{
   padding-right: 50px;
+}
+
+.p-20{
+  padding: 20px;
 }
 
 .w-100 {
