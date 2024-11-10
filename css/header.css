@@ -8,6 +8,22 @@
     border: 5px solid var(--background-color);
 }
 
+.github, .linkedin{
+    width: fit-content;
+}
+
+.github:hover > svg, .github:hover > a{
+    fill: var(--text-color);
+    color: var(--text-color);
+    transition: color 0.5s ease, fill 0.5s ease;
+}
+
+.linkedin:hover > svg, .linkedin:hover > a{
+    fill: #0a66c2;
+    color: #0a66c2;
+    transition: color 0.5s ease, fill 0.5s ease;
+}
+
 @media screen and (min-width: 768px){
     .img-profile{
         bottom: -150px;
