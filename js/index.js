@@ -27,6 +27,7 @@ async function optionMenuDev() {
                         const fecha2 = new Date(); // Fecha de hoy
                         
                         calculateDateDifference(fecha1, fecha2);
+                        setRandomsNumbersFooterMenu();
                         likeOption();
                         break;
                     case 'Experiencia Profesor':
@@ -37,6 +38,8 @@ async function optionMenuDev() {
                         })
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
+                        likeOption();
+                        setRandomsNumbersFooterMenu();
                         break;
                     case 'Formación':
                         request = await fetch('./content/college.html').then(response => {
@@ -46,6 +49,8 @@ async function optionMenuDev() {
                         })
                         information = document.getElementById('information-menu-dev');
                         information.innerHTML = request;
+                        likeOption();
+                        setRandomsNumbersFooterMenu();
                         break;
                 }
                 e.target.classList.add('selected');
@@ -76,6 +81,8 @@ async function initialInfo(){
     information = document.getElementById('information-menu-dev');
     information.innerHTML = request;
     
+    setRandomsNumbersFooterMenu();
+
     const fecha1 = new Date('2022-04-01');
     const fecha2 = new Date(); // Fecha de hoy
     
@@ -83,6 +90,7 @@ async function initialInfo(){
     likeOption();
     let optionExperience = document.getElementById('Experiencia');
     optionExperience.classList.add('selected');
+    
 }
 
 function calculateDateDifference(date1, date2) {
@@ -122,10 +130,12 @@ function likeOption(){
     likeOption.forEach(likeAction => {
         likeAction.addEventListener('click', (e) => {
             let span = likeAction.getElementsByTagName('span')[0];
+            let img = likeAction.getElementsByTagName('img')[0];
             if (likeAction.attributes.title.value == "Me gusta"){ 
                 likeAction.attributes.title.value = "Cancelar Me gusta";
                 likeAction.classList.add('active');
                 span.innerHTML = parseInt(span.innerHTML) + 1;
+                img.src = 'resources/icons/heart-full.png';
 
                 span.classList.add('update');
                 setTimeout(() => {
@@ -135,11 +145,27 @@ function likeOption(){
                 likeAction.attributes.title.value = "Me gusta"; 
                 likeAction.classList.remove('active');
                 span.innerHTML = parseInt(span.innerHTML) - 1;
+                img.src = 'resources/icons/heart.png';
                 span.classList.add('update');
                 setTimeout(() => {
                     span.classList.remove('update');
                 }, 500);
             }
         });
+    });
+}
+
+function setRandomsNumbersFooterMenu(){
+    randomNumbersOptions('.comment-option');
+    randomNumbersOptions('.retweet-option');
+    randomNumbersOptions('.like-option');
+    randomNumbersOptions('.stats-option');
+}
+
+function randomNumbersOptions(nameClass){
+    let likeOption = document.querySelectorAll(nameClass);
+    likeOption.forEach(likeAction => {
+        let span = likeAction.getElementsByTagName('span')[0];
+        span.innerHTML = Math.floor(Math.random() * 1000);
     });
 }
