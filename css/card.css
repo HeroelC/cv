@@ -25,6 +25,24 @@
     cursor: pointer;
 }
 
+.tooltip-large .tooltip-inner{
+    max-width: 500px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.tooltip-large .tooltip-arrow{
+    background-color: var(--background-color);
+}
+
+.tooltip-large .arrow::before{
+    border-top-color: var(--text-color);
+}
+
+.tooltip.show{
+    opacity: 1 !important;
+}
+
 @media screen and (min-width: 768px){
     .body-card-experience{
         display: flex;

@@ -29,6 +29,7 @@ async function optionMenuDev() {
                         calculateDateDifference(fecha1, fecha2);
                         setRandomsNumbersFooterMenu();
                         likeOption();
+                        viewProfileTooltip();
                         break;
                     case 'Experiencia Profesor':
                         request = await fetch('./content/professor.html').then(response => {
@@ -40,6 +41,7 @@ async function optionMenuDev() {
                         information.innerHTML = request;
                         likeOption();
                         setRandomsNumbersFooterMenu();
+                        viewProfileTooltip();
                         break;
                     case 'Formación':
                         request = await fetch('./content/college.html').then(response => {
@@ -51,6 +53,7 @@ async function optionMenuDev() {
                         information.innerHTML = request;
                         likeOption();
                         setRandomsNumbersFooterMenu();
+                        viewProfileTooltip();
                         break;
                 }
                 e.target.classList.add('selected');
@@ -88,6 +91,7 @@ async function initialInfo(){
     
     calculateDateDifference(fecha1, fecha2);
     likeOption();
+    viewProfileTooltip();
     let optionExperience = document.getElementById('Experiencia');
     optionExperience.classList.add('selected');
     
@@ -167,3 +171,20 @@ function randomNumbersOptions(nameClass){
         span.innerHTML = Math.floor(Math.random() * 1000);
     });
 }
+
+function viewProfileTooltip(){
+    let viewProfile = document.querySelectorAll('.view-profile');
+    viewProfile.forEach(viewProfileAction => {
+        viewProfileAction.title = "<div class='d-flex'><div><img class='img-post-profile' src='resources/img/pp.jpg' /></div><div class='m-l-6'><p class='mb-0 d-flex align-items-center'><span class='bold view-profile'>Heroel Carpinetti</span><img class='m-l-6 m-r-6' src='resources/svg/account-verify.svg' width='18px' height='18'/></p><p class='margin-top-0 m-b-16 secondary-color-text text-left mb-0'>@heroelc</p></div></div><div class='text-left'><span class='margin-top-0 m-b-0 secondary-color-text m-l-6'>Frontend Developer</span></div><div class='d-flex align-items-center'><span class='m-l-6 secondary-color-text'>Tandil, Buenos Aires, Argentina</span></div>"
+    });
+}
+
+$(document).on('inserted.bs.tooltip', function(e) {
+    var tooltip = $(e.target).data('bs.tooltip');
+    $(tooltip.tip).addClass($(e.target).data('tooltip-custom-classes'));
+});
+
+$('body').tooltip({ 
+    selector: "[title]", 
+    html: true
+});
