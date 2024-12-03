@@ -43,6 +43,11 @@ p {
   height: 32px;
 }
 
+.svg-style.download {
+  width: 32px;
+  height: 32px;
+}
+
 .svg-style.moon {
   width: 32px;
   height: 32px;
@@ -50,6 +55,11 @@ p {
 
 .svg-style.sun:hover{
   fill: #FFD700;
+  cursor: pointer;
+}
+
+.svg-style.download:hover{
+  fill: #ffae00;
   cursor: pointer;
 }
 

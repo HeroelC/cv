@@ -109,18 +109,18 @@
     cursor: pointer;
 }
 
-#toggle-button{
-    position: relative;
-    left: 85%;
-    bottom: -20px;
-}
-
 .spam-number {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .spam-number.update {
     animation: numberChange 0.5s ease;
+}
+
+#panel-header{
+    position: relative;
+    left: 75%;
+    bottom: -20px;
 }
 
 @keyframes numberChange {
@@ -140,9 +140,9 @@
 
 
 @media screen and (min-width: 446px) {
-    #toggle-button{
+    #panel-header{
         position: relative;
-        left: 90%;
+        left: 85%;
         bottom: -20px;
     }
 }
